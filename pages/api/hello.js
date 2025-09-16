@@ -1,0 +1,3 @@
+export default function handler(req, res) { // req:request, res:response
+  res.status(200).json({ text: 'Hello' }) // res.status(200) means everything is OK. You can change 200 to other status code like 404, 500, etc. res.json() means return a JSON response. Here we return a JSON object with a key 'text' and value 'Hello'. note that the value must be a string, number, boolean, array or object. CANNOT be undefined or function. Try to navigate to http://localhost:3000/api/hello to see the result
+}
